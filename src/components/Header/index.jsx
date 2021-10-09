@@ -1,12 +1,19 @@
 import Image from 'next/image';
+import toast, { Toaster } from 'react-hot-toast';
 import { MdEmail } from 'react-icons/md';
 
 import { HeaderContainer } from './styles';
 
 export function Header() {
+    function copyEmailToClipBoard() {
+        navigator.clipboard.writeText('brunofrancodemoraes@gmail.com');
+        toast.success('E-mail copiado!')
+    }
+    
     return (
         <HeaderContainer>
-            <Image src="/foto.png" alt="Foto perfil" width="210px" height="210px" className="profile-image" />
+            <div><Toaster/></div>
+            <Image src="/foto.png" alt="Foto perfil" width="200px" height="200px" className="profile-image" />
 
             <div className="profile-container">
                 <h3>PERFIL</h3>
@@ -19,13 +26,13 @@ export function Header() {
         
             <div className="contact-container">
                 <h3>CONTATO</h3>
-                <a href="https://api.whatsapp.com/send?phone=5511997443938" target="_blank" rel="noreferrer">Whats App</a>
+                <a href="https://api.whatsapp.com/send?phone=5511997443938" target="_blank" rel="noreferrer">What&#39;s App</a>
                 <a href="https://www.linkedin.com/in/brunofmoraes/" target="_blank" rel="noreferrer">LinkedIn</a>
                 <a href="https://github.com/brnofranco" target="_blank" rel="noreferrer">GitHub</a>
-                <div className="email">
+                <button className="email" onClick={copyEmailToClipBoard}>
                     <MdEmail size="25px" />
-                    <span>brunofrancodemoraes@gmail.com</span>
-                </div>
+                    <strong>brunofrancodemoraes@gmail.com</strong> 
+                </button>
             </div>
         </HeaderContainer>
     )

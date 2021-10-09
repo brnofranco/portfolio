@@ -13,7 +13,7 @@ export const HeaderContainer = styled.header`
 
     background-color: var(--green);
 
-    left: fixed;
+    position: fixed;
 
     h3 {
         color: var(--headerTitle);
@@ -52,7 +52,7 @@ export const HeaderContainer = styled.header`
             transition: 0.3s ease;
 
             &:hover {
-                background-color: #111;
+                background-color: var(--background);
                 color: #fff;
             }
         }
@@ -60,9 +60,18 @@ export const HeaderContainer = styled.header`
         .email {
             display: flex;
             align-items: center;
-            gap: 0.5rem;
+            justify-content: center;
+            gap: 0.25rem;
             padding: 0.5rem;
-            border: 1px solid black;
+            border: 1px solid #000;
+            transition: 0.3s ease;
+
+            background-color: transparent;
+
+            &:hover {
+                background-color: #000;
+                color: var(--green);
+            }
         }
     }
 `;

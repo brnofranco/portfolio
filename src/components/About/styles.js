@@ -1,0 +1,37 @@
+import styled from 'styled-components';
+
+export const SectionContainer = styled.section`
+    width: 100%;
+    height: 100vh;
+    padding: 2rem;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+
+    .about-content {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+
+        h1 {
+        color: var(--title);
+        }
+
+        strong {
+            color: var(--green);
+            font-size: 2.5rem;
+        }
+
+        p {
+            color: var(--text);
+        }
+    }
+
+    .about-image {
+        flex: 1;
+    }
+`

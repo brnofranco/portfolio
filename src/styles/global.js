@@ -55,4 +55,15 @@ export const GlobalStyles = createGlobalStyle`
         opacity: 0.6;
         cursor: not-allowed;
     }
+
+    //Tem que ter os 3
+    body::-webkit-scrollbar {
+        width: 12px;
+    }
+    body::-webkit-scrollbar-track {
+        background: var(--background);
+    }
+    body::-webkit-scrollbar-thumb {
+        background-color: #444;
+    }
 `
