@@ -18,4 +18,10 @@ export const CardContainer = styled.div`
     h3 {
         color: var(--title);
     }
+
+    transition: transform 0.2s ease-in-out;
+
+    &:hover {
+        transform: scale(1.05);
+    }
 `

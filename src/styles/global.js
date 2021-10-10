@@ -61,7 +61,7 @@ export const GlobalStyles = createGlobalStyle`
         width: 12px;
     }
     body::-webkit-scrollbar-track {
-        background: var(--background);
+        background: #111;
     }
     body::-webkit-scrollbar-thumb {
         background-color: #444;

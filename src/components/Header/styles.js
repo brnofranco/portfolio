@@ -21,11 +21,6 @@ export const HeaderContainer = styled.header`
         font-size: 1.15rem;
     }
 
-    p {
-        color: var(--headerText);
-    }
-
-
     .profile-image {
         border-radius: 50%;
     }
@@ -34,6 +29,16 @@ export const HeaderContainer = styled.header`
         display: flex;
         flex-direction: column;
         gap: 0.5rem;
+        width: 100%;
+
+        strong {
+            font-size: 0.9rem;
+        }
+
+        p, li {
+            font-size: 0.8rem;
+            color: var(--headerText);
+        }
     }
 
     .contact-container {
@@ -48,7 +53,11 @@ export const HeaderContainer = styled.header`
             padding: 0.5rem 0;
             background-color: #000;
             color: #bbb;
+            display: flex;
             text-align: center;
+            justify-content: center;
+            gap: 0.2rem;
+
             transition: 0.3s ease;
 
             &:hover {
