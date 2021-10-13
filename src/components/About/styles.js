@@ -34,4 +34,18 @@ export const SectionContainer = styled.section`
     .about-image {
         flex: 1;
     }
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .about-content {
+            flex: 0;
+        }
+
+        .about-image {
+            flex: 0;
+        }
+    }
 `

@@ -3,17 +3,17 @@ import styled from 'styled-components';
 export const HeaderContainer = styled.header`
     width: 25%;
     height: 100vh;
+    position: fixed;
 
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
 
+    background-color: var(--green);
     padding: 1rem;
 
-    background-color: var(--green);
-
-    position: fixed;
+    transition: 0.5s ease;
 
     h3 {
         color: var(--headerTitle);
@@ -81,6 +81,30 @@ export const HeaderContainer = styled.header`
                 background-color: #000;
                 color: var(--green);
             }
+        }
+    }
+
+    @media (max-width: 768px) {
+        width: 100%;
+        position: absolute;
+        z-index: 10;
+
+        display: flex;
+    }
+`;
+
+export const HamburgerNav = styled.div`
+    display: none;
+
+    @media (max-width: 768px) {
+        position: absolute;
+        z-index: 11;
+        display: flex;
+        right: 1%;
+
+        button {
+            border: 0;
+            background: inherit;
         }
     }
 `;

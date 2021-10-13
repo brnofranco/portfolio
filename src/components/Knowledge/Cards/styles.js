@@ -24,4 +24,10 @@ export const CardContainer = styled.div`
     &:hover {
         transform: scale(1.05);
     }
+
+    @media (max-width: 768px) {
+        height: 130px;
+        width: 130px;
+        padding: 0.5rem;
+    }
 `

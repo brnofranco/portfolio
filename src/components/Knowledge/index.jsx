@@ -13,7 +13,7 @@ export function Knowledge() {
                 <Card imageName="typescript" title="TypeScript" />
                 <Card imageName="react" title="React.js" />
                 <Card imageName="next" title="Next.js" />
-                <Card imageName="node" title="Node" />
+                <Card imageName="node" title="Node.js" />
                 <Card imageName="git" title="Git" />
             </div>
         </SectionContainer>

@@ -33,4 +33,8 @@ export const CardContainer = styled.div`
             margin-bottom: 1rem;
         }
     }   
+
+    @media (max-width: 768px) {
+        width: 100%;
+    }
 `

@@ -48,4 +48,12 @@ export const CardContainer = styled.div`
             }
         }
     }
+
+    @media (max-width: 768px) {
+        width: 100%;
+
+        p {
+            font-size: 0.8rem;
+        }
+    }
 `
