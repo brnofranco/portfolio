@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 
 export const SectionContainer = styled.section`
+    scroll-snap-align: start;
+    
     width: 100%;
     height: 100vh;
     padding: 2rem;

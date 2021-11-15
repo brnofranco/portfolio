@@ -25,7 +25,7 @@ export const CardContainer = styled.div`
         transform: scale(1.05);
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: 1080px) {
         height: 130px;
         width: 130px;
         padding: 0.5rem;

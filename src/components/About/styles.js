@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 
 export const SectionContainer = styled.section`
+    scroll-snap-align: start;
+    
     width: 100%;
     height: 100vh;
     padding: 2rem;
@@ -35,7 +37,7 @@ export const SectionContainer = styled.section`
         flex: 1;
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: 1080px) {
         flex-direction: column;
         align-items: center;
         justify-content: center;

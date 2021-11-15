@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 
 export const HeaderContainer = styled.header`
-    width: 25%;
-    height: 100vh;
     position: fixed;
+    width: 25%;
+    height: ${(props) => props.height};
 
     display: flex;
     flex-direction: column;
@@ -13,7 +13,7 @@ export const HeaderContainer = styled.header`
     background-color: var(--green);
     padding: 1rem;
 
-    transition: 0.5s ease;
+    transition: 0.3s ease;
 
     h3 {
         color: var(--headerTitle);
@@ -21,12 +21,18 @@ export const HeaderContainer = styled.header`
         font-size: 1.15rem;
     }
 
-    .profile-image {
-        border-radius: 50%;
+    .image-container {
+        width: 100%;
+        display:${(props) => props.display};
+        justify-content: center;
+
+        .profile-image {
+            border-radius: 100%;
+        }
     }
     
     .profile-container {
-        display: flex;
+        display:${(props) => props.display};
         flex-direction: column;
         gap: 0.5rem;
         width: 100%;
@@ -42,11 +48,12 @@ export const HeaderContainer = styled.header`
     }
 
     .contact-container {
-        display: flex;
+        display:${(props) => props.display};
         flex-direction: column;
         gap: 0.5rem;
 
         width: 100%;
+        transition: 0.5s ease;
 
         a {
             width: 100%;
@@ -55,8 +62,9 @@ export const HeaderContainer = styled.header`
             color: #bbb;
             display: flex;
             text-align: center;
+            align-items: center;
             justify-content: center;
-            gap: 0.2rem;
+            gap: 0.3rem;
 
             transition: 0.3s ease;
 
@@ -77,6 +85,10 @@ export const HeaderContainer = styled.header`
 
             background-color: transparent;
 
+            strong {
+                font-size: 0.7rem;
+            }
+
             &:hover {
                 background-color: #000;
                 color: var(--green);
@@ -84,27 +96,62 @@ export const HeaderContainer = styled.header`
         }
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: 1080px) {
         width: 100%;
-        position: absolute;
+        position: fixed;
         z-index: 10;
 
-        display: flex;
+        h3 {
+            font-size: 2rem;
+        }
+
+        .profile-container {
+            strong {
+                font-size: 1.4rem;
+            }
+
+            p, li {
+                font-size: 1.2rem;
+            }
+        }
+
+        .contact-container {
+            a {
+                padding: 1rem 0;
+            }
+
+            .email {
+                padding: 1rem 0;
+
+                strong {
+                    font-size: 1rem;
+                }
+            }
+        }
     }
 `;
 
-export const HamburgerNav = styled.div`
+export const ContactNav = styled.div`
     display: none;
 
-    @media (max-width: 768px) {
-        position: absolute;
-        z-index: 11;
+    @media (max-width: 1080px) {
+        position: fixed;
         display: flex;
-        right: 1%;
+        justify-content: flex-end;
+        z-index: 11;
+        width: 100%;
 
         button {
             border: 0;
             background: inherit;
+            right: 1%;
+        }
+
+        .background-color {
+            background-color: var(--green);
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
         }
     }
 `;

@@ -5,7 +5,7 @@ export const Layout = styled.main`
     flex-direction: column;
     margin-left: 25%;
 
-    @media (max-width: 768px) {
+    @media (max-width: 1080px) {
         margin-left: 0%;
     }
 `

@@ -31,6 +31,7 @@ export const GlobalStyles = createGlobalStyle`
     body {
         background: var(--background);
         -webkit-font-smoothing: antialiased;
+        scroll-snap-type: y mandatory;
     }
 
     body, input, textarea, button {

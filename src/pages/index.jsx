@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Conheça Bruno Franco</title>
+        <title>Conheça Bruno Franco de Moraes</title>
       </Head>
       
       <Header />
