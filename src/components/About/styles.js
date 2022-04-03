@@ -3,7 +3,8 @@ import styled from 'styled-components';
 export const SectionContainer = styled.section`
     scroll-snap-align: start;
     
-    width: 100%;
+    width: 80%;
+    margin: 0 auto;
     height: 100vh;
     padding: 2rem;
 
@@ -14,8 +15,8 @@ export const SectionContainer = styled.section`
     gap: 2rem;
 
     .about-content {
-        flex: 1;
         display: flex;
+        flex: 1;
         flex-direction: column;
         gap: 2rem;
 
@@ -34,7 +35,12 @@ export const SectionContainer = styled.section`
     }
 
     .about-image {
+        display: flex;
         flex: 1;
+
+        img {
+            width: 100%;
+        }
     }
 
     @media (max-width: 1080px) {
