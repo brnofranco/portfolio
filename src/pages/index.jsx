@@ -4,13 +4,18 @@ import { Certifications } from "../components/Certifications";
 import { Header } from "../components/Header";
 import { Knowledge } from "../components/Knowledge";
 import { Projects } from "../components/Projects";
+import { ScrollToTop } from "../components/ScrollToTop";
 import { Layout } from "../styles/layout";
 
 export default function Home() {
   return (
     <>
       <Head>
-        <title>Conheça Bruno Franco de Moraes</title>
+        <meta
+          name="description"
+          content="Conheça o portfólio de Bruno Franco de Moraes, desenvolvedor web full-stack."
+        />
+        <title>Dev Bruno Franco</title>
       </Head>
       
       <Header />
@@ -19,6 +24,7 @@ export default function Home() {
         <Knowledge />
         <Certifications />
         <Projects />
+        <ScrollToTop />
       </Layout>
     </>
   )

@@ -5,7 +5,7 @@ export const SectionContainer = styled.section`
     
     background-color: #1B1B20;
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     padding: 2rem;
 
     display: flex;
@@ -20,6 +20,9 @@ export const SectionContainer = styled.section`
     }
 
     .cards-position {
+        max-width: 1080px;
+        width: 80%;
+
         display: flex;
         align-items: center;
         justify-content: center;
