@@ -13,16 +13,17 @@ export const SectionContainer = styled.section`
     align-items: center;
     gap: 2rem;
 
+    .cards {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+
     h2 {
         color: var(--title);
         font-size: 2rem;
     }
-
-    .cards-position {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 2rem;
-        flex-wrap: wrap;
-    }
-`
+`;
