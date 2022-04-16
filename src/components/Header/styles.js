@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const HeaderContainer = styled.header`
     position: fixed;
-    width: 25%;
+    width: 20%;
     height: ${(props) => props.height};
 
     display: flex;
@@ -13,7 +13,7 @@ export const HeaderContainer = styled.header`
     background-color: var(--green);
     padding: 1rem;
 
-    transition: 0.3s ease;
+    transition: ${(props) => props.tabTransition};
 
     h3 {
         color: var(--headerTitle);
@@ -45,6 +45,15 @@ export const HeaderContainer = styled.header`
             font-size: 0.8rem;
             color: var(--headerText);
         }
+    }
+
+    .nav-container {
+        display:${(props) => props.display};
+        flex-direction: column;
+        gap: 0.5rem;
+        width: 100%;
+
+        
     }
 
     .contact-container {
@@ -86,7 +95,7 @@ export const HeaderContainer = styled.header`
             background-color: transparent;
 
             strong {
-                font-size: 0.7rem;
+                font-size: 0.9rem;
             }
 
             &:hover {

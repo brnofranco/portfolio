@@ -1,5 +1,6 @@
-import { useState, useEffect} from 'react';
+import { useEffect, useState} from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import toast, { Toaster } from 'react-hot-toast';
 import Hamburger from 'hamburger-react'
 import { MdEmail } from 'react-icons/md';
@@ -13,8 +14,17 @@ export function Header() {
         toast.success('E-mail copiado!')
     }
 
-    const [profileIsOpen, setProfileIsOpen] = useState(true);
+    const [profileIsOpen, setProfileIsOpen] = useState(false);
     const imageSize = "200px";
+
+    const toggleMobileProfile = () => (window.innerWidth <= 1080) ? setProfileIsOpen(false) : setProfileIsOpen(true);
+    
+    useEffect(() => {
+        window.addEventListener('load', toggleMobileProfile);
+        return () => {
+            window.removeEventListener('load', toggleMobileProfile);
+        };
+    }, []);
     
     return (
         <>
@@ -29,6 +39,7 @@ export function Header() {
         <HeaderContainer
             height={profileIsOpen ? '100vh' : '0'}
             display={profileIsOpen ? 'flex' : 'none'}
+            tabTransition={(profileIsOpen && window.innerWidth > 1080) ? '0' : '0.3s ease'}
         >
             
             <div className="image-container">
@@ -43,15 +54,23 @@ export function Header() {
                     Brasileiro, solteiro, 18 anos <br />
                     Jundiaí, São Paulo, Brasil
                 </strong>
-                {/* Adicionar coisas aqui!!!!!!!! */}
+                
             </div>
+
+            {/* <div className="nav-container">
+                <h3>ME CONHEÇA</h3>
+                <Link href="#about">Sobre</Link>
+                <Link href="/#certifications">Cursos</Link>
+                <Link href="/#knoledge">Conhecimentos</Link>
+                <Link href="/#projects">Projetos</Link>
+            </div> */}
         
             <div className="contact-container">
                 <h3>CONTATO</h3>
-                <a href="https://api.whatsapp.com/send?phone=5511997443938" target="_blank" rel="noreferrer">
+                {/* <a href="https://api.whatsapp.com/send?phone=5511997443938" target="_blank" rel="noreferrer">
                     <AiOutlineWhatsApp size="16" />
                     <strong>What&#39;s App</strong> 
-                </a>
+                </a> */}
                 <a href="https://www.linkedin.com/in/brunofmoraes/" target="_blank" rel="noreferrer">
                     <AiOutlineLinkedin size="16" />
                     <strong>LinkedIn</strong> 
@@ -62,7 +81,7 @@ export function Header() {
                 </a>
                 <button className="email" onClick={copyEmailToClipBoard} title="Copiar email">
                     <MdEmail size="15" />
-                    <strong>brunofrancodemoraes@gmail.com</strong> 
+                    <strong>E-mail profissional</strong> 
                 </button>
             </div>
         </HeaderContainer>
