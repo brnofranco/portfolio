@@ -36,6 +36,8 @@ export const SectionContainer = styled.section`
 
     .about-image {
         display: flex;
+        justify-content: center;
+        align-items: center;
         flex: 1;
 
         img {

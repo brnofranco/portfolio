@@ -21,7 +21,7 @@ export const SectionContainer = styled.section`
 
     .cards-position {
         max-width: 1080px;
-        width: 80%;
+        width: 100%;
 
         display: flex;
         align-items: center;
