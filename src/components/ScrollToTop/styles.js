@@ -3,9 +3,10 @@ import styled from 'styled-components';
 export const ScrollToTopButton = styled.div`
     position: fixed;
     bottom: 50px;
-    right: 40px;
-    width: 50px;
-    height: 50px;
+    right: 50px;
+
+    width: 55px;
+    height: 55px;
 
     .icon {
         opacity: ${(props) => props.opacity};
@@ -22,6 +23,7 @@ export const ScrollToTopButton = styled.div`
     @media (max-width: 1080px) {
         bottom: 10px;
         right: 10px;
+
         width: 40px;
         height: 40px;
 
