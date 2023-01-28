@@ -24,13 +24,11 @@ export function ScrollToTop() {
 	}, []);
 
 	return (
-		<ScrollToTopButton>
-			<BsFillArrowUpCircleFill
-				className="icon"
-				onClick={scrollToTop}
-				opacity={isVisible ? "1" : "0"}
-				cursor={isVisible ? "pointer" : "default"}
-			/>
+		<ScrollToTopButton
+			opacity={isVisible ? "1" : "0"}
+			cursor={isVisible ? "pointer" : "default"}
+		>
+			<BsFillArrowUpCircleFill className="icon" onClick={scrollToTop} />
 		</ScrollToTopButton>
 	);
 }

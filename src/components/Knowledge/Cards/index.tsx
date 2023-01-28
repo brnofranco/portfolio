@@ -1,6 +1,11 @@
 import { CardContainer } from "./styles";
 
-export default function Card({ image, title }) {
+interface KnowledgeCardsProps {
+	image: string;
+	title: string;
+}
+
+export default function Card({ image, title }: KnowledgeCardsProps) {
 	return (
 		<CardContainer>
 			<img src={image} alt={title} width={80} height={80} />

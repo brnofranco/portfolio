@@ -57,9 +57,8 @@ export const GlobalStyles = createGlobalStyle`
         cursor: not-allowed;
     }
 
-    //Tem que ter os 3
     body::-webkit-scrollbar {
-        width: 12px;
+        width: 0.75rem;
     }
     body::-webkit-scrollbar-track {
         background: #111;

@@ -1,6 +1,18 @@
 import { CardContainer } from "./styles";
 
-export default function Card({ title, school, time, schoolLogo }) {
+interface CertificationCardProps {
+	title: string;
+	school: string;
+	time: string;
+	schoolLogo: string;
+}
+
+export default function Card({
+	title,
+	school,
+	time,
+	schoolLogo,
+}: CertificationCardProps) {
 	return (
 		<CardContainer>
 			<img src={schoolLogo} alt={title} />
