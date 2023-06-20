@@ -1,16 +1,15 @@
 import Card from "./Cards";
 
+import { SectionContainer } from "./styles";
+
 export function Projects() {
 	return (
-		<section
-			id="SectionContainer"
-			className="bg-secondaryBackground w-full min-h-screen p-8 flex flex-col justify-center items-center gap-8"
-		>
-			<h2 className="text-title text-4xl font-semibold">Projetos</h2>
-			<div className="flex items-center justify-center flex-wrap gap-8">
+		<SectionContainer>
+			<h2>Projetos</h2>
+			<div className="cards-position">
 				<Card
 					title="Portfolio"
-					description="Este portfolio que você está vendo neste exato momento. Feito usando Vite + React.js + TS."
+					description="Vite + React.js + TS"
 					deploy="https://brunofrancodemoraes.vercel.app/"
 					repository="portfolio"
 				/>
@@ -33,6 +32,6 @@ export function Projects() {
 					repository="project-1"
 				/>
 			</div>
-		</section>
+		</SectionContainer>
 	);
 }
