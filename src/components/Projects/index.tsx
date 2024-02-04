@@ -4,7 +4,7 @@ import { SectionContainer } from "./styles";
 
 export function Projects() {
 	return (
-		<SectionContainer>
+		<SectionContainer id="projects">
 			<h2>Projetos</h2>
 			<div className="cards-position">
 				<Card

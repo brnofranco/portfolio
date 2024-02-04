@@ -1,9 +1,9 @@
-import { SectionContainer } from "./styles";
 import aboutImage from "../../assets/about.svg";
+import { SectionContainer } from "./styles";
 
 export function About() {
 	return (
-		<SectionContainer>
+		<SectionContainer id="about">
 			<div className="about-content">
 				<h1>
 					Muito prazer, sou <br />

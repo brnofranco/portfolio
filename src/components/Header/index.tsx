@@ -1,13 +1,20 @@
+import Hamburger from "hamburger-react";
 import { useEffect, useState } from "react";
 import toast, { Toaster } from "react-hot-toast";
-import Hamburger from "hamburger-react";
+import { AiOutlineGithub, AiOutlineLinkedin } from "react-icons/ai";
 import { MdEmail } from "react-icons/md";
-import { AiOutlineLinkedin, AiOutlineGithub } from "react-icons/ai";
 
-import { ContactNav, HeaderContainer } from "./styles";
 import meImage from "../../assets/me.png";
+import { ContactNav, HeaderContainer } from "./styles";
 
 export function Header() {
+	const scrollToSection = (id: string) => {
+		const element = document.getElementById(id);
+		if (element) {
+			element.scrollIntoView({ behavior: "smooth" });
+		}
+	};
+
 	function copyEmailToClipBoard() {
 		navigator.clipboard.writeText("brunofrancodemoraes@gmail.com");
 		toast.success("E-mail copiado!");
@@ -62,21 +69,22 @@ export function Header() {
 					/>
 				</div>
 
-				<div className="profile-container">
-					<h3>PERFIL</h3>
-					<strong>
-						Brasileiro, solteiro, 18 anos <br />
-						Jundiaí, São Paulo, Brasil
-					</strong>
-				</div>
+				<div className="nav-container">
+					<h3>ME CONHEÇA</h3>
 
-				{/* <div className="nav-container">
-                <h3>ME CONHEÇA</h3>
-                <Link href="#about">Sobre</Link>
-                <Link href="/#certifications">Cursos</Link>
-                <Link href="/#knoledge">Conhecimentos</Link>
-                <Link href="/#projects">Projetos</Link>
-            </div> */}
+					<button onClick={() => scrollToSection("about")}>
+						Sobre
+					</button>
+					<button onClick={() => scrollToSection("knowledge")}>
+						Experiência
+					</button>
+					<button onClick={() => scrollToSection("certifications")}>
+						Certificados
+					</button>
+					<button onClick={() => scrollToSection("projects")}>
+						Projetos
+					</button>
+				</div>
 
 				<div className="contact-container">
 					<h3>CONTATO</h3>
@@ -86,7 +94,6 @@ export function Header() {
 						rel="noreferrer"
 					>
 						<AiOutlineLinkedin size="16" />
-						<strong>LinkedIn</strong>
 					</a>
 					<a
 						href="https://github.com/brnofranco"
@@ -94,7 +101,6 @@ export function Header() {
 						rel="noreferrer"
 					>
 						<AiOutlineGithub size="16" />
-						<strong>GitHub</strong>
 					</a>
 					<button
 						className="email"
@@ -102,7 +108,6 @@ export function Header() {
 						title="Copiar email"
 					>
 						<MdEmail size="15" />
-						<strong>E-mail profissional</strong>
 					</button>
 				</div>
 			</HeaderContainer>

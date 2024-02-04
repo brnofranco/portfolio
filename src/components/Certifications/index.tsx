@@ -1,13 +1,13 @@
 import Card from "./Card";
 import { SectionContainer } from "./styles";
 
-import rocketseatLogo from "../../assets/schools/rocketseat.png";
 import aluraLogo from "../../assets/schools/alura.png";
 import cod3rLogo from "../../assets/schools/cod3r.png";
+import rocketseatLogo from "../../assets/schools/rocketseat.png";
 
 export function Certifications() {
 	return (
-		<SectionContainer>
+		<SectionContainer id="certifications">
 			<h2>Cursos</h2>
 			<div className="cards">
 				<Card
