@@ -1,32 +1,33 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const SectionContainer = styled.section`
-    scroll-snap-align: start;
-    
-    background-color: #1B1B20;
-    width: 100%;
-    min-height: 100vh;
-    padding: 2rem;
+	scroll-snap-align: start;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
+	background-color: #1b1b20;
+	width: 100%;
+	min-height: 100vh;
+	padding: 2rem;
 
-    h2 {
-        color: var(--title);
-        font-size: 2rem;
-    }
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 2rem;
 
-    .cards-position {
-        max-width: 1080px;
-        width: 100%;
+	h2 {
+		color: var(--title);
+		font-size: 2rem;
+		font-weight: bold;
+	}
 
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 2rem;
-        flex-wrap: wrap;
-    }
-`
+	.cards-position {
+		max-width: 1080px;
+		width: 100%;
+
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 2rem;
+		flex-wrap: wrap;
+	}
+`;

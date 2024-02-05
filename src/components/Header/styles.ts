@@ -8,13 +8,13 @@ interface HeaderContainerProps {
 
 export const HeaderContainer = styled.header<HeaderContainerProps>`
 	position: fixed;
-	width: 20%;
+	width: 15%;
 	height: ${(props) => props.height};
 
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	justify-content: space-around;
+	justify-content: space-between;
 
 	background-color: var(--green);
 	padding: 1rem;
@@ -25,6 +25,14 @@ export const HeaderContainer = styled.header<HeaderContainerProps>`
 		color: var(--headerTitle);
 		border-bottom: 1px solid black;
 		font-size: 1.15rem;
+	}
+
+	.navigation-data {
+		width: 100%;
+		display: ${(props) => props.display};
+		flex-direction: column;
+		gap: 4rem;
+		margin-top: 5rem;
 	}
 
 	.image-container {
@@ -57,56 +65,40 @@ export const HeaderContainer = styled.header<HeaderContainerProps>`
 	.nav-container {
 		display: ${(props) => props.display};
 		flex-direction: column;
-		gap: 0.5rem;
+		gap: 1rem;
 		width: 100%;
+
+		button {
+			width: auto;
+			padding: 1rem;
+			padding-left: 0.75rem;
+			cursor: pointer;
+			transition: 0.5s ease;
+
+			border-left: 2px solid black;
+
+			&:hover {
+				background-color: #289869;
+			}
+		}
 	}
 
 	.contact-container {
 		display: ${(props) => props.display};
-		flex-direction: column;
-		gap: 0.5rem;
+		gap: 1rem;
+		flex-wrap: wrap;
 
 		width: 100%;
 		transition: 0.5s ease;
+		color: black;
 
 		a {
-			width: 100%;
-			padding: 0.5rem 0;
-			background-color: #000;
-			color: #bbb;
-			display: flex;
-			text-align: center;
-			align-items: center;
-			justify-content: center;
-			gap: 0.3rem;
-
-			transition: 0.3s ease;
-
-			&:hover {
-				background-color: var(--background);
-				color: #fff;
-			}
+			color: black;
+			cursor: pointer;
 		}
 
-		.email {
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			gap: 0.25rem;
-			padding: 0.5rem;
-			border: 1px solid #000;
-			transition: 0.3s ease;
-
-			background-color: transparent;
-
-			strong {
-				font-size: 0.9rem;
-			}
-
-			&:hover {
-				background-color: #000;
-				color: var(--green);
-			}
+		button {
+			cursor: pointer;
 		}
 	}
 
