@@ -87,6 +87,8 @@ export const HeaderContainer = styled.header<HeaderContainerProps>`
 		display: ${(props) => props.display};
 		gap: 1rem;
 		flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
 
 		width: 100%;
 		transition: 0.5s ease;

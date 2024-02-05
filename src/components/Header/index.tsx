@@ -8,6 +8,15 @@ import meImage from "../../assets/me.png";
 import { ContactNav, HeaderContainer } from "./styles";
 
 export function Header() {
+	const [profileIsOpen, setProfileIsOpen] = useState(false);
+	const imageSize = "200px";
+	const iconSize = "24";
+
+	const toggleMobileProfile = () =>
+		window.innerWidth <= 1080
+			? setProfileIsOpen(false)
+			: setProfileIsOpen(true);
+
 	const scrollToSection = (id: string) => {
 		const element = document.getElementById(id);
 		if (element) {
@@ -15,18 +24,10 @@ export function Header() {
 		}
 	};
 
-	function copyEmailToClipBoard() {
+	const copyEmailToClipBoard = () => {
 		navigator.clipboard.writeText("brunofrancodemoraes@gmail.com");
 		toast.success("E-mail copiado!");
-	}
-
-	const [profileIsOpen, setProfileIsOpen] = useState(false);
-	const imageSize = "200px";
-
-	const toggleMobileProfile = () =>
-		window.innerWidth <= 1080
-			? setProfileIsOpen(false)
-			: setProfileIsOpen(true);
+	};
 
 	useEffect(() => {
 		window.addEventListener("load", toggleMobileProfile);
@@ -97,21 +98,21 @@ export function Header() {
 						target="_blank"
 						rel="noreferrer"
 					>
-						<AiOutlineLinkedin size="32" />
+						<AiOutlineLinkedin size={iconSize} />
 					</a>
 					<a
 						href="https://github.com/brnofranco"
 						target="_blank"
 						rel="noreferrer"
 					>
-						<AiOutlineGithub size="32" />
+						<AiOutlineGithub size={iconSize} />
 					</a>
 					<button
 						className="email"
 						onClick={copyEmailToClipBoard}
 						title="Copiar email"
 					>
-						<MdEmail size="32" />
+						<MdEmail size={iconSize} />
 					</button>
 				</div>
 			</HeaderContainer>
