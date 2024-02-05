@@ -7,13 +7,17 @@ export function About() {
 			<div className="about-content">
 				<h1>
 					Muito prazer, sou <br />
-					<strong>Bruno Franco de Moraes</strong>
+					<strong>Bruno</strong>
+					<h2>Desenvolvedor Full Stack</h2>
 				</h1>
 
 				<p>
-					Busco aprendizado constante na minha carreira como
-					desenvolvedor para, futuramente, me tornar um desenvolvedor
-					Fullstack.
+					Minha jornada no universo da programação é guiada pela
+					paixão por solucionar problemas. A cada linha de código,
+					enxergo uma oportunidade de criar soluções inovadoras e
+					impactantes. Com dedicação e entusiasmo, busco
+					constantemente aprimorar minhas habilidades para enfrentar
+					desafios e contribuir para o desenvolvimento tecnológico.
 				</p>
 			</div>
 			<div className="about-image">

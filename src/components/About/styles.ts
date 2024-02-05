@@ -22,16 +22,24 @@ export const SectionContainer = styled.section`
 
 		h1 {
 			color: var(--title);
+			font-size: 2rem;
 		}
 
 		strong {
 			color: var(--green);
-			font-size: 2.5rem;
+			font-size: 5rem;
+			font-weight: bold;
+		}
+
+		h2 {
+			color: var(--green);
+			font-size: 2rem;
 			font-weight: bold;
 		}
 
 		p {
 			color: var(--text);
+			line-height: normal;
 		}
 	}
 
