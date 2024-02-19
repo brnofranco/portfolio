@@ -6,6 +6,7 @@ interface ScrollToTopButtonProps {
 }
 
 export const ScrollToTopButton = styled.div<ScrollToTopButtonProps>`
+	z-index: 1000;
 	position: fixed;
 	bottom: 50px;
 	right: 50px;
