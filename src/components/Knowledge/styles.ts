@@ -49,6 +49,8 @@ export const SectionContainer = styled.section`
 
 		img {
 			color: white;
+			width: 50px;
+			height: 50px;
 		}
 
 		.icons {
@@ -56,11 +58,18 @@ export const SectionContainer = styled.section`
 			flex-wrap: wrap;
 			gap: 1rem;
 		}
+	}
 
-		@media (max-width: 1080px) {
-			height: 130px;
-			width: 130px;
-			padding: 0.5rem;
+	@media (max-width: 1080px) {
+		padding: 55px 2rem;
+
+		.card-container {
+			width: 100%;
+
+			img {
+				width: 45px;
+				height: 45px;
+			}
 		}
 	}
 `;
