@@ -3,7 +3,7 @@ import { CardContainer } from "./styles";
 interface ProjectCardProps {
 	description: string;
 	title: string;
-	deploy: string;
+	deploy?: string;
 	repository: string;
 }
 
@@ -18,14 +18,10 @@ export default function Card({
 			<h3>{title}</h3>
 			<p>{description}</p>
 			<div className="buttons-container">
-				<a
-					target="_blank"
-					href={`https://github.com/brnofranco/${repository}`}
-					rel="noreferrer"
-				>
+				<a target="_blank" href={repository} rel="noreferrer">
 					Repositório
 				</a>
-				{!!deploy && (
+				{deploy && (
 					<a target="_blank" href={deploy} rel="noreferrer">
 						Site
 					</a>

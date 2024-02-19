@@ -20,7 +20,8 @@ export const SectionContainer = styled.section`
 		font-weight: bold;
 	}
 
-	.cards-position {
+	.cards-container {
+		width: 100%;
 		display: flex;
 		align-items: center;
 		justify-content: center;

@@ -50,10 +50,11 @@ export const CardContainer = styled.div`
 	}
 
 	@media (max-width: 1080px) {
-		width: 100%;
+		width: 40%;
+		min-width: 300px;
 
 		p {
-			font-size: 0.8rem;
+			font-size: 0.9rem;
 		}
 	}
 `;
