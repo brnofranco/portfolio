@@ -26,7 +26,7 @@ export function Projects() {
 				<Card
 					title="Portfólio"
 					description="Desenvolvido 100% do zero com React."
-					repository="https://github.com/brnofranco/spotify-playlist-to-mp3"
+					repository="https://github.com/brnofranco/portfolio"
 				/>
 			</div>
 		</SectionContainer>
