@@ -4,7 +4,7 @@ import { SectionContainer } from "./styles";
 export function About() {
 	return (
 		<SectionContainer id="about">
-			<div className="about-content">
+			<div className="about-container">
 				<h1>
 					Muito prazer, sou <br />
 					<strong>Bruno</strong>
@@ -20,13 +20,9 @@ export function About() {
 					desafios e contribuir para o desenvolvimento tecnológico.
 				</p>
 			</div>
-			<div className="about-image">
-				<img
-					src={aboutImage}
-					width="400"
-					height="400"
-					alt="rapaz programador"
-				/>
+
+			<div className="image-container">
+				<img src={aboutImage} alt="rapaz programador" />
 			</div>
 		</SectionContainer>
 	);
