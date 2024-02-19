@@ -36,5 +36,10 @@ export const CardContainer = styled.div`
 
 	@media (max-width: 1080px) {
 		width: 100%;
+
+		img {
+			max-height: 100%;
+			max-width: 40%;
+		}
 	}
 `;
