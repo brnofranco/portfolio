@@ -2,13 +2,13 @@ import Card from "./Card";
 import { SectionContainer } from "./styles";
 
 import rocketseatLogo from "../../assets/schools/rocketseat.png";
-import aluraLogo from "../../assets/schools/alura.png";
-import cod3rLogo from "../../assets/schools/cod3r.png";
+import uptimeLogo from "../../assets/schools/uptime.png";
+import voxyLogo from "../../assets/schools/voxy.png";
 
 export function Certifications() {
 	return (
-		<SectionContainer>
-			<h2>Cursos</h2>
+		<SectionContainer id="certifications">
+			<h2>Tenho os seguintes certificados</h2>
 			<div className="cards">
 				<Card
 					title="Trilha de React.js"
@@ -17,16 +17,16 @@ export function Certifications() {
 					schoolLogo={rocketseatLogo}
 				/>
 				<Card
-					title="Formação Typescript"
-					school="Alura"
-					time="40"
-					schoolLogo={aluraLogo}
+					title="Proficiency Achievement Certificate - Low Advanced"
+					school="Voxy"
+					year="2023"
+					schoolLogo={voxyLogo}
 				/>
 				<Card
-					title="Curso Intensivo de Next.js"
-					school="Cod3r"
-					time="6"
-					schoolLogo={cod3rLogo}
+					title='Certificate of Conclusion from the course "S.A.T."'
+					school="Uptime"
+					year="2017"
+					schoolLogo={uptimeLogo}
 				/>
 			</div>
 		</SectionContainer>

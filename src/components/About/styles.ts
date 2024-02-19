@@ -3,42 +3,49 @@ import styled from "styled-components";
 export const SectionContainer = styled.section`
 	scroll-snap-align: start;
 
-	width: 80%;
-	margin: 0 auto;
+	width: 100%;
 	height: 100vh;
 	padding: 2rem;
 
 	display: flex;
-	flex-direction: row;
 	align-items: center;
-	justify-content: center;
+	justify-content: space-between;
 	gap: 2rem;
 
-	.about-content {
+	.about-container {
+		flex: 6;
 		display: flex;
-		flex: 1;
 		flex-direction: column;
 		gap: 2rem;
 
 		h1 {
 			color: var(--title);
+			font-size: 2rem;
 		}
 
 		strong {
 			color: var(--green);
-			font-size: 2.5rem;
+			font-size: 5rem;
+			font-weight: bold;
+		}
+
+		h2 {
+			color: var(--green);
+			font-size: 2rem;
+			font-weight: bold;
 		}
 
 		p {
 			color: var(--text);
+			line-height: normal;
 		}
 	}
 
-	.about-image {
+	.image-container {
+		flex: 4;
 		display: flex;
-		justify-content: center;
 		align-items: center;
-		flex: 1;
+		justify-content: center;
 
 		img {
 			width: 100%;
@@ -46,16 +53,21 @@ export const SectionContainer = styled.section`
 	}
 
 	@media (max-width: 1080px) {
+		padding-top: 55px;
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
 
-		.about-content {
+		.about-container {
 			flex: 0;
 		}
 
-		.about-image {
+		.image-container {
 			flex: 0;
+
+			img {
+				width: 70%;
+			}
 		}
 	}
 `;

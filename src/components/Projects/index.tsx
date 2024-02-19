@@ -4,32 +4,29 @@ import { SectionContainer } from "./styles";
 
 export function Projects() {
 	return (
-		<SectionContainer>
-			<h2>Projetos</h2>
-			<div className="cards-position">
-				<Card
-					title="Portfolio"
-					description="Vite + React.js + TS"
-					deploy="https://brunofrancodemoraes.vercel.app/"
-					repository="portfolio"
-				/>
-				<Card
-					title="Calculadora IMC"
-					description="Site feito com React.js que calcula IMC e mostra seu resultado de acordo com a tela."
-					deploy="https://bmi-calculator-olive.vercel.app/"
-					repository="bmi-calculator"
-				/>
+		<SectionContainer id="projects">
+			<h2>Minhas melhores invenções</h2>
+			<div className="cards-container">
 				<Card
 					title="How'sTheWeather"
-					description="Site feito com React.js que consome uma API de clima e mostra informações sobre sua cidade."
+					description="Feito com React que consome uma API de clima e mostra informações climáticas de qualquer cidade."
 					deploy="https://howstheweather-brnofranco.vercel.app/"
-					repository="howstheweather"
+					repository="https://github.com/brnofranco/howstheweather"
 				/>
 				<Card
-					title="Gerador de Cards (posts)"
-					description="Site feito com React.js que consome uma API com informações genéricas para ser mostrada nos posts."
-					deploy="https://eloquent-ardinghelli-09985e.netlify.app/"
-					repository="project-1"
+					title="Habituaí"
+					description="Aplicativo de gerenciamento de hábitos com gamificação feito em React."
+					repository="https://github.com/Habituai/Front"
+				/>
+				<Card
+					title="Youtube Downloader MP3 From Spotify Playlist"
+					description="Script em Python que baixa músicas de uma playlist do Spotify pelo YouTube."
+					repository="https://github.com/brnofranco/spotify-playlist-to-mp3"
+				/>
+				<Card
+					title="Portfólio"
+					description="Desenvolvido 100% do zero com React."
+					repository="https://github.com/brnofranco/spotify-playlist-to-mp3"
 				/>
 			</div>
 		</SectionContainer>
