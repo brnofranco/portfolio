@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import cucumberIcon from "../../assets/technologies/cucumber.svg";
 import cypressIcon from "../../assets/technologies/cypress.svg";
 import gitIcon from "../../assets/technologies/git.svg";
@@ -18,12 +19,14 @@ import tsIcon from "../../assets/technologies/ts.svg";
 import { SectionContainer } from "./styles";
 
 export function Knowledge() {
+	const { t } = useTranslation();
+
 	return (
 		<SectionContainer id="knowledge">
-			<h2>Tenho experiência com</h2>
+			<h2>{t("knowledge.title")}</h2>
 			<div className="stacks-container">
 				<div className="card-container">
-					<h3>Linguagens de programação</h3>
+					<h3>{t("knowledge.languages")}</h3>
 					<div className="icons">
 						<img src={jsIcon} title="JavaScript" alt="JavaScript" />
 						<img src={tsIcon} title="TypeScript" alt="TypeScript" />
@@ -47,7 +50,7 @@ export function Knowledge() {
 				</div>
 
 				<div className="card-container">
-					<h3>Ferramentas de teste</h3>
+					<h3>{t("knowledge.tests")}</h3>
 					<div className="icons">
 						<img
 							src={tlIcon}
@@ -66,7 +69,7 @@ export function Knowledge() {
 				</div>
 
 				<div className="card-container">
-					<h3>Ferramentas de estilização</h3>
+					<h3>{t("knowledge.styling")}</h3>
 					<div className="icons">
 						<img
 							src={tailwindIcon}
@@ -87,7 +90,7 @@ export function Knowledge() {
 				</div>
 
 				<div className="card-container">
-					<h3>Ferramenta de versionamento</h3>
+					<h3>{t("knowledge.versioning")}</h3>
 					<div className="icons">
 						<img src={gitIcon} title="Git" alt="Git" />
 					</div>

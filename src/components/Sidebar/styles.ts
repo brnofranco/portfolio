@@ -19,7 +19,7 @@ export const HeaderContainer = styled.header`
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		gap: 2rem;
+		gap: 3rem;
 		margin-top: 4rem;
 
 		.image-container {

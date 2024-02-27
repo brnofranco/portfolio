@@ -14,7 +14,8 @@ export function App() {
 	return (
 		<>
 			<ScrollToTop />
-			{isMobile ? <Header /> : <Sidebar />}
+			<Header />
+			{!isMobile && <Sidebar />}
 			<Layout>
 				<About />
 				<Knowledge />

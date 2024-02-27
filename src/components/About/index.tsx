@@ -1,24 +1,20 @@
+import { useTranslation } from "react-i18next";
 import aboutImage from "../../assets/about.svg";
 import { SectionContainer } from "./styles";
 
 export function About() {
+	const { t } = useTranslation();
+
 	return (
 		<SectionContainer id="about">
 			<div className="about-container">
 				<h1>
-					Muito prazer, sou <br />
+					{t("about.introduction")} <br />
 					<strong>Bruno</strong>
-					<h2>Desenvolvedor Full Stack</h2>
+					<b>{t("about.title")}</b>
 				</h1>
 
-				<p>
-					Minha jornada no universo da programação é guiada pela
-					paixão por solucionar problemas. A cada linha de código,
-					enxergo uma oportunidade de criar soluções inovadoras e
-					impactantes. Com dedicação e entusiasmo, busco
-					constantemente aprimorar minhas habilidades para enfrentar
-					desafios e contribuir para o desenvolvimento tecnológico.
-				</p>
+				<p>{t("about.paragraph")}</p>
 			</div>
 
 			<div className="image-container">

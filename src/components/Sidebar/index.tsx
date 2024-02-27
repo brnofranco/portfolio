@@ -1,11 +1,12 @@
 import toast, { Toaster } from "react-hot-toast";
+import { useTranslation } from "react-i18next";
 import { AiOutlineGithub, AiOutlineLinkedin } from "react-icons/ai";
 import { MdEmail } from "react-icons/md";
-
 import meImage from "../../assets/me.png";
 import { HeaderContainer } from "./styles";
 
 export function Sidebar() {
+	const { t } = useTranslation();
 	const iconSize = "32";
 
 	const scrollToSection = (id: string) => {
@@ -35,21 +36,21 @@ export function Sidebar() {
 
 					<div className="nav-container">
 						<button onClick={() => scrollToSection("about")}>
-							Sobre
+							{t("sidebar.about")}
 						</button>
 						<button onClick={() => scrollToSection("knowledge")}>
-							Experiência
+							{t("sidebar.knowledge")}
 						</button>
 						<button
 							onClick={() => scrollToSection("certifications")}
 						>
-							Certificados
+							{t("sidebar.certifications")}
 						</button>
 						<button onClick={() => scrollToSection("projects")}>
-							Projetos
+							{t("sidebar.projects")}
 						</button>
 						{/* <button onClick={() => scrollToSection("curriculum")}>
-							CV
+							{t("sidebar.curriculum")}
 						</button> */}
 					</div>
 				</div>

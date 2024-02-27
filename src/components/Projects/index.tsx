@@ -1,31 +1,34 @@
+import { useTranslation } from "react-i18next";
 import Card from "./Cards";
 
 import { SectionContainer } from "./styles";
 
 export function Projects() {
+	const { t } = useTranslation();
+
 	return (
 		<SectionContainer id="projects">
-			<h2>Minhas melhores invenções</h2>
+			<h2>{t("projects.title")}</h2>
 			<div className="cards-container">
 				<Card
-					title="How'sTheWeather"
-					description="Feito com React que consome uma API de clima e mostra informações climáticas de qualquer cidade."
+					title="How's The Weather"
+					description={t("projects.descriptions.howstheweather")}
 					deploy="https://howstheweather-brnofranco.vercel.app/"
 					repository="https://github.com/brnofranco/howstheweather"
 				/>
 				<Card
 					title="Habituaí"
-					description="Aplicativo de gerenciamento de hábitos com gamificação feito em React."
+					description={t("projects.descriptions.habituai")}
 					repository="https://github.com/Habituai/Front"
 				/>
 				<Card
 					title="Youtube Downloader MP3 From Spotify Playlist"
-					description="Script em Python que baixa músicas de uma playlist do Spotify pelo YouTube."
+					description={t("projects.descriptions.spotifytomp3")}
 					repository="https://github.com/brnofranco/spotify-playlist-to-mp3"
 				/>
 				<Card
 					title="Portfólio"
-					description="Desenvolvido 100% do zero com React."
+					description={t("projects.descriptions.portfolio")}
 					repository="https://github.com/brnofranco/portfolio"
 				/>
 			</div>

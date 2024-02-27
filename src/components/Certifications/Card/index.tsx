@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import { CardContainer } from "./styles";
 
 interface CertificationCardProps {
@@ -15,6 +16,8 @@ export default function Card({
 	time,
 	year,
 }: CertificationCardProps) {
+	const { t } = useTranslation();
+
 	return (
 		<CardContainer>
 			<img src={schoolLogo} alt={title} />
@@ -23,12 +26,13 @@ export default function Card({
 				<p>{school}</p>
 				{time && (
 					<>
-						Carga horária: <span>{time} horas</span>
+						{t("certifications.card.workload")}:{" "}
+						<span>{time} horas</span>
 					</>
 				)}
 				{year && (
 					<>
-						Emissão: <span>{year}</span>
+						{t("certifications.card.issuance")}: <span>{year}</span>
 					</>
 				)}
 			</div>

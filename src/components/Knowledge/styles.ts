@@ -18,6 +18,7 @@ export const SectionContainer = styled.section`
 		color: var(--title);
 		font-size: 2rem;
 		font-weight: bold;
+		text-align: center;
 	}
 
 	.stacks-container {

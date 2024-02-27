@@ -3,7 +3,8 @@ import styled from "styled-components";
 export const SectionContainer = styled.section`
 	scroll-snap-align: start;
 
-	width: 100%;
+	margin: 0 auto;
+	width: 90%;
 	height: 100vh;
 	padding: 2rem;
 
@@ -21,6 +22,8 @@ export const SectionContainer = styled.section`
 		h1 {
 			color: var(--title);
 			font-size: 2rem;
+			display: flex;
+			flex-direction: column;
 		}
 
 		strong {
@@ -29,7 +32,7 @@ export const SectionContainer = styled.section`
 			font-weight: bold;
 		}
 
-		h2 {
+		b {
 			color: var(--green);
 			font-size: 2rem;
 			font-weight: bold;

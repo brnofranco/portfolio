@@ -17,6 +17,7 @@ export const CardContainer = styled.div`
 
 	h3 {
 		color: var(--title);
+		text-align: center;
 	}
 
 	p {

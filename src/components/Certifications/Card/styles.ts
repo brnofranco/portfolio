@@ -25,6 +25,7 @@ export const CardContainer = styled.div`
 		h3 {
 			color: var(--title);
 			text-decoration: underline;
+			padding-bottom: 0.5rem;
 		}
 
 		p {

@@ -1,0 +1,42 @@
+{
+	"sidebar": {
+		"about": "Sobre",
+		"knowledge": "Experiência",
+		"certifications": "Certificados",
+		"projects": "Projetos",
+		"curriculum": "CV"
+	},
+	"about": {
+		"introduction": "Muito prazer, sou",
+		"title": "Desenvolvedor Full Stack",
+		"paragraph": "Minha jornada no universo da programação é guiada pela paixão por solucionar problemas. A cada linha de código, enxergo uma oportunidade de criar soluções inovadoras e impactantes. Com dedicação e entusiasmo, busco constantemente aprimorar minhas habilidades para enfrentar desafios e contribuir para o desenvolvimento tecnológico."
+	},
+	"knowledge": {
+		"title": "Tenho experiência com",
+		"languages": "Linguagens de programação",
+		"tests": "Ferramentas de teste",
+		"styling": "Ferramentas de estilização",
+		"versioning": "Ferramenta de versionamento"
+	},
+	"certifications": {
+		"title": "Tenho os seguintes certificados",
+		"rocketseat": "Trilha de React.js",
+		"card": {
+			"issuance": "Emissão",
+			"workload": "Carga horária"
+		}
+	},
+	"projects": {
+		"title": "Minhas melhores invenções",
+		"descriptions": {
+			"howstheweather": "Feito com React que consome uma API de clima e mostra informações climáticas de qualquer cidade.",
+			"habituai": "Aplicativo de gerenciamento de hábitos com gamificação feito em React.",
+			"spotifytomp3": "Script em Python que baixa músicas de uma playlist do Spotify pelo YouTube.",
+			"portfolio": "Desenvolvido 100% do zero com React."
+		},
+		"card": {
+			"website": "Site",
+			"repository": "Repositório"
+		}
+	}
+}

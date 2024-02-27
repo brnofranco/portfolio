@@ -1,17 +1,20 @@
 import Card from "./Card";
 import { SectionContainer } from "./styles";
 
+import { useTranslation } from "react-i18next";
 import rocketseatLogo from "../../assets/schools/rocketseat.png";
 import uptimeLogo from "../../assets/schools/uptime.png";
 import voxyLogo from "../../assets/schools/voxy.png";
 
 export function Certifications() {
+	const { t } = useTranslation();
+
 	return (
 		<SectionContainer id="certifications">
-			<h2>Tenho os seguintes certificados</h2>
+			<h2>{t("certifications.title")}</h2>
 			<div className="cards">
 				<Card
-					title="Trilha de React.js"
+					title={t("certifications.rocketseat")}
 					school="Rocketseat Ignite"
 					time="100"
 					schoolLogo={rocketseatLogo}

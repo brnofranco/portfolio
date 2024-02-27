@@ -1,0 +1,42 @@
+{
+	"sidebar": {
+		"about": "About",
+		"knowledge": "Knowledge",
+		"certifications": "Certifications",
+		"projects": "Projects",
+		"curriculum": "CV"
+	},
+	"about": {
+		"introduction": "Nice to meet you, I'm",
+		"title": "Full Stack Developer",
+		"paragraph": "My journey in the programming universe is guided by a passion for solving problems. With each line of code, I see an opportunity to create innovative and impactful solutions. With dedication and enthusiasm, I constantly seek to improve my skills to tackle challenges and contribute to technological development."
+	},
+	"knowledge": {
+		"title": "I have experience with",
+		"languages": "Programming languages",
+		"tests": "Testing tools",
+		"styling": "Styling tools",
+		"versioning": "Version control tools"
+	},
+	"certifications": {
+		"title": "I have the following certifications",
+		"rocketseat": "React.js",
+		"card": {
+			"issuance": "Issuance",
+			"workload": "Workload"
+		}
+	},
+	"projects": {
+		"title": "My best projects",
+		"descriptions": {
+			"howstheweather": "Made with React that consumes a weather API and shows weather information for any city.",
+			"habituai": "Habit management application with gamification made in React.",
+			"spotifytomp3": "Python script that downloads songs from a Spotify playlist via YouTube.",
+			"portfolio": "Developed 100% from scratch with React."
+		},
+		"card": {
+			"website": "Website",
+			"repository": "Repository"
+		}
+	}
+}
