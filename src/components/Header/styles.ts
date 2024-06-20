@@ -10,7 +10,7 @@ export const ContactNav = styled.div`
 	width: 100%;
 	padding: 1rem;
 
-	button,
+	button.hamburger,
 	p {
 		display: none;
 	}
@@ -26,16 +26,25 @@ export const ContactNav = styled.div`
 
 	@media (max-width: 1080px) {
 		justify-content: space-between;
+		align-items: center;
 
 		height: 50px;
 		padding: 0;
 		background-color: var(--green);
 
-		button,
+		button.change-language,
+		button.hamburger,
 		p,
 		div {
 			display: block;
 			flex: 1;
+		}
+
+		button.change-language {
+			display: flex;
+			align-items: center;
+			justify-content: end;
+			padding-right: 0.5rem;
 		}
 
 		p {
