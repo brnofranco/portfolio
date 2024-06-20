@@ -11,12 +11,6 @@ export function Projects() {
 			<h2>{t("projects.title")}</h2>
 			<div className="cards-container">
 				<Card
-					title="How's The Weather"
-					description={t("projects.descriptions.howstheweather")}
-					deploy="https://howstheweather-brnofranco.vercel.app/"
-					repository="https://github.com/brnofranco/howstheweather"
-				/>
-				<Card
 					title="Habituaí"
 					description={t("projects.descriptions.habituai")}
 					repository="https://github.com/Habituai/Front"
@@ -27,8 +21,15 @@ export function Projects() {
 					repository="https://github.com/brnofranco/spotify-playlist-to-mp3"
 				/>
 				<Card
-					title="Portfólio"
-					description={t("projects.descriptions.portfolio")}
+					title="How's The Weather"
+					description={t("projects.descriptions.howstheweather")}
+					deploy="https://howstheweather-brnofranco.vercel.app/"
+					repository="https://github.com/brnofranco/howstheweather"
+				/>
+				<Card
+					title="Blog"
+					description={t("projects.descriptions.blog")}
+					deploy="https://brnoblog.vercel.app/"
 					repository="https://github.com/brnofranco/portfolio"
 				/>
 			</div>

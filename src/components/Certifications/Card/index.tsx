@@ -27,7 +27,9 @@ export default function Card({
 				{time && (
 					<>
 						{t("certifications.card.workload")}:{" "}
-						<span>{time} horas</span>
+						<span>
+							{time} {t("certifications.card.hours")}
+						</span>
 					</>
 				)}
 				{year && (

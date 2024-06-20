@@ -23,7 +23,8 @@
 		"rocketseat": "Trilha de React.js",
 		"card": {
 			"issuance": "Emissão",
-			"workload": "Carga horária"
+			"workload": "Carga horária",
+			"hours": "horas"
 		}
 	},
 	"projects": {
@@ -32,7 +33,7 @@
 			"howstheweather": "Feito com React que consome uma API de clima e mostra informações climáticas de qualquer cidade.",
 			"habituai": "Aplicativo de gerenciamento de hábitos com gamificação feito em React.",
 			"spotifytomp3": "Script em Python que baixa músicas de uma playlist do Spotify pelo YouTube.",
-			"portfolio": "Desenvolvido 100% do zero com React."
+			"blog": "Blog pessoal sobre tecnologia e outros assuntos interessantes."
 		},
 		"card": {
 			"website": "Site",
