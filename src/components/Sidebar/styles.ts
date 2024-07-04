@@ -4,12 +4,12 @@ export const HeaderContainer = styled.header`
 	z-index: 100;
 	position: fixed;
 	width: 300px;
-	height: 100dvh;
+	height: 100vh;
 
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	justify-content: space-between;
+	justify-content: space-around;
 
 	background-color: var(--green);
 	padding: 1rem;
