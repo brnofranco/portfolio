@@ -4,7 +4,7 @@ export const HeaderContainer = styled.header`
 	z-index: 100;
 	position: fixed;
 	width: 300px;
-	height: 100vh;
+	height: 100dvh;
 
 	display: flex;
 	flex-direction: column;

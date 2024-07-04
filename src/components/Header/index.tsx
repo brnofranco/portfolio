@@ -5,6 +5,7 @@ import { Sidebar } from "../Sidebar";
 import { ContactNav } from "./styles";
 import brazilianFlag from "../../assets/countries/br.svg";
 import usaFlag from "../../assets/countries/usa.svg";
+import icon from "../../assets/favicon.svg";
 
 interface NextLanguageData {
 	iconNextLanguage: string;
@@ -46,7 +47,12 @@ export function Header() {
 					<Hamburger toggled={showSidebar} toggle={setShowSidebar} />
 				</button>
 
-				<p>Bruno Franco</p>
+				<img
+					className="icon"
+					src={icon}
+					height={36}
+					alt="Bruno Franco logo"
+				/>
 
 				<button
 					onClick={handleChangeLanguage}
@@ -54,8 +60,8 @@ export function Header() {
 				>
 					<img
 						src={nextLanguage.iconNextLanguage}
-						width={40}
 						alt={nextLanguage.alt}
+						width={32}
 					/>
 				</button>
 			</ContactNav>

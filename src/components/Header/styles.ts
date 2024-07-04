@@ -11,8 +11,12 @@ export const ContactNav = styled.div`
 	padding: 1rem;
 
 	button.hamburger,
-	p {
+	img.icon {
 		display: none;
+	}
+
+	button.change-language {
+		cursor: poi;
 	}
 
 	select {
@@ -34,7 +38,7 @@ export const ContactNav = styled.div`
 
 		button.change-language,
 		button.hamburger,
-		p,
+		img.icon,
 		div {
 			display: block;
 			flex: 1;
@@ -45,11 +49,6 @@ export const ContactNav = styled.div`
 			align-items: center;
 			justify-content: end;
 			padding-right: 0.5rem;
-		}
-
-		p {
-			text-align: center;
-			font-weight: bold;
 		}
 
 		div {
