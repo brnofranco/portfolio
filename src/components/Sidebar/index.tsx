@@ -25,7 +25,7 @@ export function Sidebar() {
 		<>
 			<Toaster />
 			<HeaderContainer>
-				<div className="image-nav-container">
+				<div className="sidebar-container">
 					<div className="image-container">
 						<img
 							src={meImage}
@@ -50,32 +50,32 @@ export function Sidebar() {
 							{t("sidebar.projects")}
 						</button>
 					</div>
-				</div>
 
-				<div className="contact-container">
-					<a
-						href="https://www.linkedin.com/in/brunofmoraes/"
-						target="_blank"
-						rel="noreferrer"
-						title="LinkedIn"
-					>
-						<AiOutlineLinkedin size={iconSize} />
-					</a>
-					<a
-						href="https://github.com/brnofranco"
-						target="_blank"
-						rel="noreferrer"
-						title="GitHub"
-					>
-						<AiOutlineGithub size={iconSize} />
-					</a>
-					<button
-						className="email"
-						onClick={copyEmailToClipBoard}
-						title="Copiar email"
-					>
-						<MdEmail size={iconSize} />
-					</button>
+					<div className="contact-container">
+						<a
+							href="https://www.linkedin.com/in/brunofmoraes/"
+							target="_blank"
+							rel="noreferrer"
+							title="LinkedIn"
+						>
+							<AiOutlineLinkedin size={iconSize} />
+						</a>
+						<a
+							href="https://github.com/brnofranco"
+							target="_blank"
+							rel="noreferrer"
+							title="GitHub"
+						>
+							<AiOutlineGithub size={iconSize} />
+						</a>
+						<button
+							className="email"
+							onClick={copyEmailToClipBoard}
+							title="Copiar email"
+						>
+							<MdEmail size={iconSize} />
+						</button>
+					</div>
 				</div>
 			</HeaderContainer>
 		</>
