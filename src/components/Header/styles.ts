@@ -16,7 +16,7 @@ export const ContactNav = styled.div`
 	}
 
 	button.change-language {
-		cursor: poi;
+		cursor: pointer;
 	}
 
 	select {

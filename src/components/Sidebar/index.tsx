@@ -49,9 +49,6 @@ export function Sidebar() {
 						<button onClick={() => scrollToSection("projects")}>
 							{t("sidebar.projects")}
 						</button>
-						{/* <button onClick={() => scrollToSection("curriculum")}>
-							{t("sidebar.curriculum")}
-						</button> */}
 					</div>
 				</div>
 

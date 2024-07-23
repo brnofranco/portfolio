@@ -1,6 +1,8 @@
 import { useTranslation } from "react-i18next";
-import aboutImage from "../../assets/about.svg";
+import { FaDownload } from "react-icons/fa";
 import { SectionContainer } from "./styles";
+import aboutImage from "../../assets/about.svg";
+import curriculum from "../../assets/cv.pdf";
 
 export function About() {
 	const { t } = useTranslation();
@@ -15,6 +17,12 @@ export function About() {
 				</h1>
 
 				<p>{t("about.paragraph")}</p>
+
+				<div>
+					<a href={curriculum} download>
+						<FaDownload /> {t("about.curriculum")}
+					</a>
+				</div>
 			</div>
 
 			<div className="image-container">

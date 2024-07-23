@@ -3,13 +3,13 @@
 		"about": "About",
 		"knowledge": "Knowledge",
 		"certifications": "Certifications",
-		"projects": "Projects",
-		"curriculum": "CV"
+		"projects": "Projects"
 	},
 	"about": {
 		"introduction": "Nice to meet you, I'm",
 		"title": "Full Stack Developer",
-		"paragraph": "My journey in the programming universe is guided by a passion for solving problems. With each line of code, I see an opportunity to create innovative and impactful solutions. With dedication and enthusiasm, I constantly seek to improve my skills to tackle challenges and contribute to technological development."
+		"paragraph": "My journey in the programming universe is guided by a passion for solving problems. With each line of code, I see an opportunity to create innovative and impactful solutions. With dedication and enthusiasm, I constantly seek to improve my skills to tackle challenges and contribute to technological development.",
+		"curriculum": "Download CV"
 	},
 	"knowledge": {
 		"title": "I have experience with",

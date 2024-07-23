@@ -42,6 +42,29 @@ export const SectionContainer = styled.section`
 			color: var(--text);
 			line-height: normal;
 		}
+
+		div {
+			display: flex;
+
+			a {
+				display: flex;
+				align-items: center;
+				gap: 0.5rem;
+
+				background-color: inherit;
+				border: 2px solid var(--green);
+				border-radius: 0.5rem;
+				padding: 1rem 1.25rem;
+				color: var(--green);
+				font-weight: 600;
+				transition: 0.3s ease;
+
+				&:hover {
+					background-color: var(--green);
+					color: white;
+				}
+			}
+		}
 	}
 
 	.image-container {

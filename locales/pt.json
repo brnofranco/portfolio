@@ -3,13 +3,13 @@
 		"about": "Sobre",
 		"knowledge": "Experiência",
 		"certifications": "Certificados",
-		"projects": "Projetos",
-		"curriculum": "CV"
+		"projects": "Projetos"
 	},
 	"about": {
 		"introduction": "Muito prazer, sou",
 		"title": "Desenvolvedor Full Stack",
-		"paragraph": "Minha jornada no universo da programação é guiada pela paixão por solucionar problemas. A cada linha de código, enxergo uma oportunidade de criar soluções inovadoras e impactantes. Com dedicação e entusiasmo, busco constantemente aprimorar minhas habilidades para enfrentar desafios e contribuir para o desenvolvimento tecnológico."
+		"paragraph": "Minha jornada no universo da programação é guiada pela paixão por solucionar problemas. A cada linha de código, enxergo uma oportunidade de criar soluções inovadoras e impactantes. Com dedicação e entusiasmo, busco constantemente aprimorar minhas habilidades para enfrentar desafios e contribuir para o desenvolvimento tecnológico.",
+		"curriculum": "Baixar CV"
 	},
 	"knowledge": {
 		"title": "Tenho experiência com",
