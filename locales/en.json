@@ -3,7 +3,8 @@
 		"about": "About",
 		"knowledge": "Knowledge",
 		"certifications": "Certifications",
-		"projects": "Projects"
+		"projects": "Projects",
+		"copyEmail": "Copy email"
 	},
 	"about": {
 		"introduction": "Nice to meet you, I'm",

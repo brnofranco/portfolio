@@ -71,7 +71,7 @@ export function Sidebar() {
 						<button
 							className="email"
 							onClick={copyEmailToClipBoard}
-							title="Copiar email"
+							title={t("sidebar.copyEmail")}
 						>
 							<MdEmail size={iconSize} />
 						</button>
