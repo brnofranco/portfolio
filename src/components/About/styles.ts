@@ -1,17 +1,22 @@
 import styled from "styled-components";
 
 export const SectionContainer = styled.section`
-	scroll-snap-align: start;
-
-	margin: 0 auto;
-	width: 90%;
 	height: 100vh;
-	padding: 2rem;
+	background-image: url("./darkBg.png");
+	background-size: cover;
 
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
-	gap: 2rem;
+
+	.section-container {
+		margin: 0 auto;
+		width: 90%;
+		padding: 2rem;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 2rem;
+	}
 
 	.about-container {
 		flex: 6;
@@ -20,7 +25,7 @@ export const SectionContainer = styled.section`
 		gap: 2rem;
 
 		h1 {
-			color: var(--title);
+			color: var(--white);
 			font-size: 2rem;
 			display: flex;
 			flex-direction: column;
@@ -39,7 +44,7 @@ export const SectionContainer = styled.section`
 		}
 
 		p {
-			color: var(--text);
+			color: var(--gray-light);
 			line-height: normal;
 		}
 

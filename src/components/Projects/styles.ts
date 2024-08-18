@@ -1,9 +1,7 @@
 import styled from "styled-components";
 
 export const SectionContainer = styled.section`
-	scroll-snap-align: start;
-
-	background-color: #1b1b20;
+	background-color: var(--gray);
 	width: 100%;
 	min-height: 100vh;
 	padding: 2rem;
@@ -15,7 +13,7 @@ export const SectionContainer = styled.section`
 	gap: 2rem;
 
 	h2 {
-		color: var(--title);
+		color: var(--white);
 		font-size: 2rem;
 		font-weight: bold;
 		text-align: center;

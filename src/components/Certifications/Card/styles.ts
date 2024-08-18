@@ -10,11 +10,11 @@ export const CardContainer = styled.div`
 	gap: 1rem;
 	padding: 1rem;
 
-	background-color: #111;
-	color: var(--text);
+	background-color: var(--gray-dark);
+	color: var(gray-light);
 
 	border: 4px solid;
-	border-image: linear-gradient(227.91deg, #0b5a39 0%, #14e18c 100%) 1;
+	border-image: var(--green-gradient);
 
 	img {
 		max-height: 100%;
@@ -23,13 +23,13 @@ export const CardContainer = styled.div`
 
 	.certification-content {
 		h3 {
-			color: var(--title);
+			color: var(--white);
 			text-decoration: underline;
 			padding-bottom: 0.5rem;
 		}
 
 		p {
-			color: var(--title);
+			color: var(--white);
 			opacity: 0.6;
 			margin-bottom: 1rem;
 		}

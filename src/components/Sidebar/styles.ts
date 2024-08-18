@@ -46,7 +46,7 @@ export const HeaderContainer = styled.aside`
 				border-left: 2px solid black;
 
 				&:hover {
-					background-color: #289869;
+					background-color: var(--green-dark);
 				}
 			}
 

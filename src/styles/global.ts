@@ -64,13 +64,15 @@ export const GlobalStyles = createGlobalStyle`
 	}
 
 	:root {
-        --background: #16161a;
-        --text: #94a1b2;
-        --title: #fffffe;
+        --gray-extra-dark: #111;
+        --gray-dark: #16161a;
+		--gray: #1b1b20;
+        --gray-light: #94a1b2;
+        --white: #fffffe;
         --green: #2cb67d;
-
-        --headerTitle: #010101;
-        --headerText: #222;
+        --green-dark: #289869;
+        --black: #010101;
+		--green-gradient: linear-gradient(227.91deg, #0b5a39 0%, #14e18c 100%) 1;
     }
 
     * {
@@ -87,7 +89,7 @@ export const GlobalStyles = createGlobalStyle`
     }
 
     body {
-        background: var(--background);
+        background: var(--gray-extra-dark);
         -webkit-font-smoothing: antialiased;
         scroll-snap-type: y mandatory;
     }

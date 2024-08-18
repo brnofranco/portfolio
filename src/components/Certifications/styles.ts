@@ -1,11 +1,11 @@
 import styled from "styled-components";
 
 export const SectionContainer = styled.section`
-	scroll-snap-align: start;
-
 	width: 100%;
 	min-height: 100vh;
 	padding: 2rem;
+	background-image: url("./darkBg.png");
+	background-size: cover;
 
 	display: flex;
 	flex-direction: column;
@@ -23,7 +23,7 @@ export const SectionContainer = styled.section`
 	}
 
 	h2 {
-		color: var(--title);
+		color: var(--white);
 		font-size: 2rem;
 		font-weight: bold;
 		text-align: center;

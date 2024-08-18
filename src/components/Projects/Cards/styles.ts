@@ -10,19 +10,19 @@ export const CardContainer = styled.div`
 	gap: 0.5rem;
 	padding: 1rem;
 
-	background-color: #111;
+	background-color: var(--gray-dark);
 
 	border: 4px solid;
-	border-image: linear-gradient(227.91deg, #0b5a39 0%, #14e18c 100%) 1;
+	border-image: var(--green-gradient);
 
 	h3 {
-		color: var(--title);
+		color: var(--white);
 		text-align: center;
 	}
 
 	p {
 		text-align: center;
-		color: var(--text);
+		color: var(--gray-light);
 	}
 
 	.buttons-container {
@@ -34,7 +34,7 @@ export const CardContainer = styled.div`
 			border-radius: 5px;
 			border: 1px solid var(--green);
 			font-weight: bold;
-			color: #111;
+			color: var(--gray-dark);
 			padding: 0.5rem;
 			min-width: 90px;
 
@@ -44,7 +44,7 @@ export const CardContainer = styled.div`
 			transition: 0.3s ease;
 
 			&:hover {
-				background-color: #111;
+				background-color: var(--gray-dark);
 				color: var(--green);
 			}
 		}
