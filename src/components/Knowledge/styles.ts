@@ -12,7 +12,7 @@ export const SectionContainer = styled.section`
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	gap: 2rem;
+	gap: 4rem;
 
 	h2 {
 		color: var(--title);
@@ -36,6 +36,7 @@ export const SectionContainer = styled.section`
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
+		align-items: center;
 		gap: 1rem;
 
 		background-color: #111;
