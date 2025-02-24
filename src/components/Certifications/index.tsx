@@ -3,6 +3,7 @@ import { SectionContainer } from "./styles";
 
 import { useTranslation } from "react-i18next";
 import rocketseatLogo from "../../assets/schools/rocketseat.png";
+import courseraLogo from "../../assets/schools/coursera.png";
 import uptimeLogo from "../../assets/schools/uptime.png";
 import voxyLogo from "../../assets/schools/voxy.png";
 
@@ -14,6 +15,18 @@ export function Certifications() {
 			<h2>{t("certifications.title")}</h2>
 			<div className="cards">
 				<Card
+					title="Software Design and Architecture"
+					school="Coursera"
+					time="32"
+					schoolLogo={courseraLogo}
+				/>
+				<Card
+					title="Introduction to Cloud Computing"
+					school="Coursera"
+					time="12"
+					schoolLogo={courseraLogo}
+				/>
+				<Card
 					title={t("certifications.rocketseat")}
 					school="Rocketseat Ignite"
 					time="100"
@@ -24,12 +37,6 @@ export function Certifications() {
 					school="Voxy"
 					year="2023"
 					schoolLogo={voxyLogo}
-				/>
-				<Card
-					title='Certificate of Conclusion from the course "S.A.T."'
-					school="Uptime"
-					year="2017"
-					schoolLogo={uptimeLogo}
 				/>
 			</div>
 		</SectionContainer>
