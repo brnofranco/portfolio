@@ -2,10 +2,19 @@ import { useTranslation } from "react-i18next";
 import { FaDownload } from "react-icons/fa";
 import { SectionContainer } from "./styles";
 import aboutImage from "../../assets/about.svg";
-import curriculum from "../../assets/cv.pdf";
+
+import curriculumBr from "../../assets/bruno-cv-pt.pdf";
+import curriculumEn from "../../assets/bruno-cv-en.pdf";
 
 export function About() {
-	const { t } = useTranslation();
+	const { t, i18n } = useTranslation();
+
+	const selectedLanguage = i18n.language as "pt" | "en";
+
+	const changeLanguageData = {
+		pt: curriculumBr,
+		en: curriculumEn,
+	};
 
 	return (
 		<SectionContainer id="about">
@@ -19,7 +28,7 @@ export function About() {
 				<p>{t("about.paragraph")}</p>
 
 				<div>
-					<a href={curriculum} download>
+					<a href={changeLanguageData[selectedLanguage]} download>
 						<FaDownload /> {t("about.curriculum")}
 					</a>
 				</div>
