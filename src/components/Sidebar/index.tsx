@@ -18,7 +18,7 @@ export function Sidebar() {
 
 	const copyEmailToClipBoard = () => {
 		navigator.clipboard.writeText("brunofrancodemoraes@gmail.com");
-		toast.success("E-mail copiado!");
+		toast.success(t("sidebar.copyEmailMessage"));
 	};
 
 	return (

@@ -4,7 +4,8 @@
 		"knowledge": "Experiência",
 		"certifications": "Certificados",
 		"projects": "Projetos",
-		"copyEmail": "Copiar email"
+		"copyEmail": "Copiar email",
+		"copyEmailMessage": "E-mail copiado!"
 	},
 	"about": {
 		"introduction": "Muito prazer, sou",

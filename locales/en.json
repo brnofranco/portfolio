@@ -4,7 +4,8 @@
 		"knowledge": "Knowledge",
 		"certifications": "Certifications",
 		"projects": "Projects",
-		"copyEmail": "Copy email"
+		"copyEmail": "Copy email",
+		"copyEmailMessage": "Email copied!"
 	},
 	"about": {
 		"introduction": "Nice to meet you, I'm",
