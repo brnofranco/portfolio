@@ -1,6 +1,7 @@
 import toast, { Toaster } from "react-hot-toast";
 import { useTranslation } from "react-i18next";
 import { AiOutlineGithub, AiOutlineLinkedin } from "react-icons/ai";
+import { FaBlogger } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import meImage from "../../assets/me.png";
 import { HeaderContainer } from "./styles";
@@ -75,6 +76,17 @@ export function Sidebar() {
 						>
 							<MdEmail size={iconSize} />
 						</button>
+						<a
+							href={
+								import.meta.env.VITE_GITHUB_URL ||
+								"https://brnoblog.vercel.app/"
+							}
+							target="_blank"
+							rel="noreferrer"
+							title="Blog"
+						>
+							<FaBlogger size={iconSize} />
+						</a>
 					</div>
 				</div>
 			</HeaderContainer>
